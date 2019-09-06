@@ -10,3 +10,6 @@ build
 <p>$npm run buildDev</p>
 note:before to run it, you need to install mongodb
 $npm start
+
+<p>open your browser</p>
+copy this localhost:3000/spa.html
