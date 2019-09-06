@@ -8,7 +8,7 @@ install dependencies
 <p>$npm install</p>
 build
 <p>$npm run buildDev</p>
-note: before to run it, you should need to install mongodb
+note: before to run it, you should install mongodb
 
 <p>$npm start</p>
 
