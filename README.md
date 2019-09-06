@@ -8,8 +8,9 @@ install dependencies
 <p>$npm install</p>
 build
 <p>$npm run buildDev</p>
-note:before to run it, you need to install mongodb
-$npm start
+note: before to run it, you should need to install mongodb
 
-<p>open your browser</p>
-copy this localhost:3000/spa.html
+<p>$npm start</p>
+
+<p>open your browser and copy this</p>
+localhost:3000/spa.html
