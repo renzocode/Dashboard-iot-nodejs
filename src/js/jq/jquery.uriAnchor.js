@@ -431,7 +431,7 @@
         anchor_string = getCleanAnchorString(),
         anchor_map, idx, keys_array, key_name, key_value, dep_array
         ;
-
+        console.log(anchor_string);
       if ( anchor_string === ''  ) { return {}; }
 
       // first pass decompose
@@ -444,6 +444,7 @@
       // extract keys to prevent run-away recursion when
       // adding keys to anchor_map, below
       keys_array = [];
+      //console.log(anchor_map);
       for ( key_name in anchor_map  ) {
         if ( anchor_map.hasOwnProperty( key_name ) ) {
           keys_array.push( key_name );
@@ -481,13 +482,13 @@
     configModule = function ( arg_map  ) {
       var
         settable_map = configMap.settable_map_key,
-        key_name, error
-        ;
-
+        key_name, error;
+      console.log(settable_map);
       for ( key_name in arg_map ) {
         if ( arg_map.hasOwnProperty( key_name )) {
           if ( settable_map.hasOwnProperty( key_name )) {
             configMap[key_name] = arg_map[key_name];
+            console.log(configMap[key_name]);
           }
           else {
             error         = new Error();

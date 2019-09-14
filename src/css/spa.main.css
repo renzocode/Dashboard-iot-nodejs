@@ -1,0 +1,37 @@
+.spa-main{
+	position: relative;
+	background-color: #5F9EA0;
+}
+
+.spa-main-head{
+	/*background-color: #DC143C;*/
+	height:  50px;
+}
+.spa-main-body{
+	background-color :  #006400;
+	height           :  550px;
+}
+
+ul{
+	list-style-type: none;
+	margin : 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li{
+	float: left;
+}
+
+li a{
+	display: block;
+	color: white !important;
+	text-align: center;
+	padding: 18px 50px;
+	text-decoration: none;
+}
+
+li a:hover:not(.active){
+	background-color: #111;
+}

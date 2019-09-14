@@ -35,7 +35,7 @@
       configMap = {
         clean0_regex     : /^[#!]*/,
         clean1_regex     : /\?[^?]*$/,
-            settable_map_key : { schema_map : true },
+        settable_map_key : { schema_map : true },
         schema_map       : null
       },
 
@@ -98,6 +98,7 @@
             ;
         }
       }
+      console.log(output_map);
       return output_map;
     };
     // End internal utility /parseStringToMap/
@@ -440,6 +441,8 @@
         anchor_string = getCleanAnchorString(),
         anchor_map, idx, keys_array, key_name, key_value, dep_array
         ;
+        console.log(anchor_string);
+
 
       if ( anchor_string === ''  ) { return {}; }
 
@@ -492,7 +495,7 @@
         settable_map = configMap.settable_map_key,
         key_name, error
         ;
-
+        console.log(arg_map);
       for ( key_name in arg_map ) {
         if ( arg_map.hasOwnProperty( key_name )) {
           if ( settable_map.hasOwnProperty( key_name )) {
@@ -507,6 +510,7 @@
           }
         }
       }
+      console.log(configMap);
     };
     // End public method /configModule/
 

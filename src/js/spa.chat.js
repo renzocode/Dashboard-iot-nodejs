@@ -76,7 +76,6 @@
 					slider_closed_em   : true,
 					slider_opened_title: true,
 					slider_closed_title: true,
-
 					chat_model         : true,
 					people_model       : true,
 					set_chat_anchor    : true  
@@ -88,7 +87,6 @@
 				slider_opened_title    : 'Tap to close',
 				slider_closed_title    : 'Tap to open',
 				slider_opened_min_em   : 10,
-
 				chat_model             : null,
 				people_model           : null,
 				set_chat_anchor        : null
@@ -121,20 +119,20 @@
 					$append_target = stateMap.$append_target,
 					$slider = $append_target.find('.spa-chat');
 				jqueryMap = { 
-					$slider :  $slider,
-					$head   :  $slider.find('.spa-chat-head'),
-					$toggle :  $slider.find('.spa-chat-head-toggle'),
-					$title  :  $slider.find('.spa-chat-head-title'),
-					$sizer  :  $slider.find('.spa-chat-sizer'),
-				    $msgs   :  $slider.find('.spa-chat-msgs'),
-				    $box    :  $slider.find('.spa-chat-box'),
-				    $list_box: $slider.find('.spa-chat-list-box'),
-				    $msg_log : $slider.find('.spa-chat-msg-log'),
-				    $msg_in : $slider.find('.spa-chat-msg-in'),
-				    $input  :  $slider.find('.spa-chat-msg-in input[type=text]'),
-				    $send :  $slider.find('.spa-chat-msg-send'),
-				    $form : $slider.find('.spa-chat-msg-form'),
-				    $window : $(window)
+					$slider  :  $slider,
+					$head    :  $slider.find('.spa-chat-head'),
+					$toggle  :  $slider.find('.spa-chat-head-toggle'),
+					$title   :  $slider.find('.spa-chat-head-title'),
+					$sizer   :  $slider.find('.spa-chat-sizer'),
+				    $msgs    :  $slider.find('.spa-chat-msgs'),
+				    $box     :  $slider.find('.spa-chat-box'),
+				    $list_box:  $slider.find('.spa-chat-list-box'),
+				    $msg_log :  $slider.find('.spa-chat-msg-log'),
+				    $msg_in  :  $slider.find('.spa-chat-msg-in'),
+				    $input   :  $slider.find('.spa-chat-msg-in input[type=text]'),
+				    $send    :  $slider.find('.spa-chat-msg-send'),
+				    $form    : $slider.find('.spa-chat-msg-form'),
+				    $window  : $(window)
 					//$container : $container
 				};
 			};
@@ -389,7 +387,9 @@
 
 			initModule = function($append_target){
 				var $list_box;
-				$append_target.append(configMap.main_html);
+				//console.log($append_target);
+				//$append_target.append(configMap.main_html);
+				console.log($append_target.find('.spa-shell-main-content'));
 				stateMap.$append_target = $append_target;
 				$append_target.append(configMap.main_html);
 				setJqueryMap();

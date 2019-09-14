@@ -52,7 +52,7 @@
 			},
 			isFakeData = true,
 			personProto, makeCid, clearPeopleDb, completeLogin,
-			makePerson, removePerson, people, chat, initModule;
+			makePerson, removePerson, people, chat, initModule, main;
 
 			
 			personProto = {
@@ -174,6 +174,15 @@
 					logout     : logout
 				};
 
+			})();
+
+			main = (function(){
+				var data = function(){
+					console.log("data");
+				}
+				return {
+					data : data
+				}
 			})();
 
 			chat = (function(){
@@ -343,7 +352,6 @@
 				people : people
 			};
 		})();
-		console.log("models");
 		return spa.model;
 }));
 

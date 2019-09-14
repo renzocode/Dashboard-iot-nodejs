@@ -57,16 +57,17 @@ strong{
 }
 
 #spa{
-	position:  		  absolute;
+	/*position:  		  absolute;
 	top : 	   		  8px;
-	left : 	   		  8px;
+	left : 	   		  8px;*/
 	bottom:    		  8px;
-	right: 	   		  8px;
+	/*right: 	   		  8px;*/
 	min-height: 	  500px;
 	min-width: 		  500px;
 	overflow: 		  hidden;
 	background-color: #fff;
-	border-radius: 	  0 8px 0 8px;	
+	/*border-radius: 	  0 8px 0 8px;*/
+	
 }
 
 .spa-x-select{

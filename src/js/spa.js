@@ -18,9 +18,8 @@
     	supports = BSN.supports = [];
 		var spa = (function(){
 			var initModule = function($container){
-				console.log("sssssss");
-				spa.model.initModule();
-				spa.shell.initModule($container);
+				//spa.model.initModule();
+				//spa.shell.initModule($container);
 			}		
 			return {initModule : initModule};
 		}());

@@ -2,6 +2,7 @@ require('../../js/lib/taffy');
 //console.log(typeof(require('../../js/lib/taffy')));
 require('../../css/spa.css');
 require('../../css/spa.chat.css');
+require('../../css/spa.main.css');
 require('../../css/spa.shell.css');
 require('../../css/spa.avtr.css');
 
@@ -16,7 +17,8 @@ require('../../js/spa.fake');
 require('../../js/spa.model');
 require('../../js/spa.util_b');
 require('../../js/spa.shell');
-require('../../js/spa.chat');
+//require('../../js/spa.chat');
+require('../../js/spa.main');
 require('../../js/spa.avtr');
 require('../../js/spa-html');
 

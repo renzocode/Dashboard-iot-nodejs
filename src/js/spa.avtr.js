@@ -41,11 +41,9 @@
 
 			var 
 			configMap = {
-				chat_model : null,
-				people_model : null,
+				main_model : null,
 				settable_map : {
-					chat_model : true,
-					people_model : true
+					main_model : true
 				}
 			},
 			stateMap = {
