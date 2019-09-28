@@ -2,6 +2,8 @@
 <p>free software</p>
 download existing repository
 <p>$git clone https://github.com/renzocode/Dashboard-iot-nodejs.git</p>
+or to download iot-dashboard branch
+<p>$git clone -b iot-dashboard https://github.com/renzocode/Dashboard-iot-nodejs.git</p>
 enter to Dashoboard-iot-nodejs directory
 <p>$cd Dashboard-iot-nodejs</p>
 install dependencies
